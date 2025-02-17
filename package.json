@@ -1,6 +1,6 @@
 {
-  "name": "@locallife/base-waterfall-list",
-  "version": "0.0.5-hotfix.aplha.3",
+  "name": "@machy/base-waterfall-list",
+  "version": "0.0.1",
   "sideEffects": false,
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
