@@ -27,7 +27,6 @@ import { PerformanceWaterfallList } from "../../PerformanceWaterfallList";
 import { FeedCommonGoodsCard } from "../../waterFallList/feedCommonGoodsCard";
 import FeedWeeklyPromotionCard from "../../waterFallList/FeedWeeklyPromotionCard";
 
-const titleStyle = getThemeColor("cs_common_text_title");
 const styles = EStyleUtil.create({
   footer: {
     height: 80,
@@ -48,7 +47,7 @@ const styles = EStyleUtil.create({
     fontSize: 16,
     marginBottom: 12,
     fontWeight: "bold",
-    color: titleStyle,
+    color: getThemeColor("cs_common_text_title"),
   },
   goodsBottomContainer: {
     marginTop: 8,
