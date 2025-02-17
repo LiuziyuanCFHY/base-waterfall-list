@@ -6,7 +6,7 @@ import React, {
   useRef,
   useState,
 } from "react";
-import { Text, View, ViewStyle, ViewToken } from "react-native";
+import { Text, View, ViewStyle, ViewToken, StyleSheet } from "react-native";
 import { useQueryNearbyGoods } from "../../../service/NearbyService";
 import GoodsBottom from "../../bottom";
 import { SCREEN_WIDTH } from "@locallife/design-base";
@@ -27,7 +27,8 @@ import { PerformanceWaterfallList } from "../../PerformanceWaterfallList";
 import { FeedCommonGoodsCard } from "../../waterFallList/feedCommonGoodsCard";
 import FeedWeeklyPromotionCard from "../../waterFallList/FeedWeeklyPromotionCard";
 
-const styles = EStyleUtil.create({
+const titleStyle = getThemeColor("cs_common_text_title");
+const styles = StyleSheet.create({
   footer: {
     height: 80,
     alignItems: "center",
@@ -47,7 +48,7 @@ const styles = EStyleUtil.create({
     fontSize: 16,
     marginBottom: 12,
     fontWeight: "bold",
-    color: () => getThemeColor("cs_common_text_title"),
+    color: titleStyle,
   },
   goodsBottomContainer: {
     marginTop: 8,
