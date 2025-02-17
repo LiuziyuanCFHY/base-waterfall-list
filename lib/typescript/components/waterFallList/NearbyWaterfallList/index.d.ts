@@ -1,7 +1,7 @@
-import React from 'react';
-import { ViewStyle } from 'react-native';
-import { FeedModel, IFetchType, IUseQueryNearbyGoodsParams } from '../model';
-import { WeeklyPromotionModel } from '../FeedWeeklyPromotionCard/Model/WeeklyPromotionModel';
+import React from "react";
+import { ViewStyle } from "react-native";
+import { FeedModel, IFetchType, IUseQueryNearbyGoodsParams } from "../model";
+import { WeeklyPromotionModel } from "../FeedWeeklyPromotionCard/Model/WeeklyPromotionModel";
 interface IProps {
     fetchType: IFetchType;
     fetchParams: IUseQueryNearbyGoodsParams;
