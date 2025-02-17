@@ -1,5 +1,5 @@
 {
-  "name": "@machy/base-waterfall-list",
+  "name": "machy_base-waterfall-list",
   "version": "0.0.1",
   "sideEffects": false,
   "main": "lib/commonjs/index",
@@ -27,16 +27,12 @@
     "typescript": "tsc --noEmit",
     "lint": "yarn eslint \"**/*.{js,ts,tsx}\"",
     "prepare": "yarn husky install && yarn bob build",
-    "prepublishOnly": "node scripts/prepublish.js",
     "version": "conventional-changelog -p angular -i CHANGELOG.md -s && git add CHANGELOG.md",
     "example": "yarn --cwd example",
     "bootstrap": "yarn example && yarn"
   },
   "author": "",
   "license": "MIT",
-  "publishConfig": {
-    "registry": "https://npm.corp.kuaishou.com"
-  },
   "repository": {
     "type": "git",
     "url": "https://git.corp.kuaishou.com/locallife/client/library/react-native/base-waterfall-list.git"

@@ -1,5 +1,5 @@
-import React from 'react';
-import { FeedGoodsInfo } from '../../model';
+import React from "react";
+import { FeedGoodsInfo } from "../../model";
 type Props = {
     data: FeedGoodsInfo;
     end?: () => void;
