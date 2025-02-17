@@ -28,7 +28,7 @@ import { FeedCommonGoodsCard } from "../../waterFallList/feedCommonGoodsCard";
 import FeedWeeklyPromotionCard from "../../waterFallList/FeedWeeklyPromotionCard";
 
 const titleStyle = getThemeColor("cs_common_text_title");
-const styles = StyleSheet.create({
+const styles = EStyleUtil.create({
   footer: {
     height: 80,
     alignItems: "center",
