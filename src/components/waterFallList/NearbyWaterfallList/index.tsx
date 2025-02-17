@@ -47,7 +47,7 @@ const styles = EStyleUtil.create({
     fontSize: 16,
     marginBottom: 12,
     fontWeight: "bold",
-    color: getThemeColor("cs_common_text_title"),
+    color: () => getThemeColor("cs_common_text_title"),
   },
   goodsBottomContainer: {
     marginTop: 8,
@@ -372,6 +372,13 @@ const NearbyWaterfallList = memo((props: IProps) => {
               {JSON.stringify({ ...styles.title })}
               titleStyle
               {JSON.stringify({ ...titleStyle })}
+              样式内容
+              {JSON.stringify({
+                ...styles.title,
+                ...titleStyle,
+              })}
+              getThemeColor("cs_common_text_title")结果
+              {JSON.stringify(() => getThemeColor("cs_common_text_title"))}
             </Text>
           )}
           <PerformanceWaterfallList
